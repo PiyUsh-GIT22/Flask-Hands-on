@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"
+        id="bootstrap-css">
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <meta charset="UTF-8">
+    <title>Programming Languages</title>
+</head>
+<body>
+    <div class="container">
+        <div class="col-lg-12 mt-5">
+            {% for d in data %}
+            <div class="col-lg-6" style="margin-top: 3%">
+                <h2>{{ d.title }}</h2>
+                <p>{{ d.content }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
